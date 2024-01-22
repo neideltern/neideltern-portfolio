@@ -120,13 +120,75 @@ mobile()
     color inherit
     line-height 1
 
-// VARIABLES
-// font variables
-
+// GLOBAL VARIABLES
+// colors
+$body-background = hsb(220, 24, 2)
+$element-background = hsb(220, 18, 8)
+$element-foreground = hsb(220, 16, 12)
+$text-color-primary = hsb(220, 6, 100)
+$text-color-secondary = hsb(220, 8, 86)
+$text-color-tertiary = hsb(220, 10, 72)
+// gap
+$gap-xl = 32px
+$gap-lg = 24px
+$gap-md = 12px
+$gap-sm = 6px
+// height
+$control-height-lg = 42px
+$control-height-md = 32px
+// border radius
+$hero-border-radius = 32px
+$card-border-radius = 12px
+// font size
+$font-size-xl = 24px
+$font-size-hg = 20px
+$font-size-lg = 18px
+$font-size-md = 16px
+$font-size-sm = 14px
+$font-size-xs = 12px
+// font family
 $sans = 'IBM Plex Sans'
 $mono = 'IBM Plex Mono'
 $icon = 'Ndtr Icons'
-
+// font weight
 $light = 300
 $regular = 400
 $medium = 500
+// timing functions
+$ease-out-back = cubic-bezier(0.32, 1.56, 0.64, 1)
+
+// ADAPTIVE VATIABLES
+:root
+    // margin
+    --page-margin: 12px
+    --header-margin-top: 64px
+    --header-margin-bottom: 48px
+    // padding
+    --page-padding: 12px
+    --container-padding-vertical: 48px
+    --container-padding-horizontal: 64px
+
+    +desktop-sm()
+        // padding
+        --container-padding-vertical: 32px
+        --container-padding-horizontal: 48px
+
+    +tablet-lg()
+        // margin
+        --page-margin: 6px
+        --header-margin-top: 48px
+        --header-margin-bottom: 32px
+        // padding
+        --page-padding: 6px
+        --container-padding-vertical: 32px
+        --container-padding-horizontal: 24px
+
+    +mobile()
+        // margin
+        --page-margin: 6px
+        --header-margin-top: 48px
+        --header-margin-bottom: 32px
+        // padding
+        --page-padding: 0px
+        --container-padding-vertical: 24px
+        --container-padding-horizontal: 16px
