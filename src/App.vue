@@ -1,0 +1,15 @@
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+</script>
+
+<template>
+    <RouterLink to="/">Home</RouterLink>
+    <RouterLink to="/about">About</RouterLink>
+    <RouterLink to="/contact">Contact</RouterLink>
+    <RouterView />
+</template>
+
+<style lang="stylus">
+body
+    background: $background 
+</style>
