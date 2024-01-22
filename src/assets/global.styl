@@ -1,2 +1,132 @@
-body
-    background: black
+// RESET
+*
+    padding 0
+    margin 0
+    min-width 0
+    border none
+    outline none
+    background none
+    box-sizing border-box
+    text-decoration none
+    -webkit-tap-highlight-color transparent
+
+// FUNCTIONS
+
+hsb($h-hsb, $s-hsb, $b-hsb, $a-hsb = 1)
+    if $b-hsb == 0
+        return hsla(0, 0, 0, $a-hsb)
+    else
+        $l-hsl = ($b-hsb / 2) * (2 - ($s-hsb / 100))
+        $s-hsl = ($b-hsb * $s-hsb) / ($l-hsl < 50 ? $l-hsl * 2 : 200 - $l-hsl * 2)
+        return hsla($h-hsb, $s-hsl, $l-hsl, $a-hsb)
+
+// MIXINS
+
+text-overflow($lines = 1)
+    if $lines == 1
+        overflow hidden
+        white-space nowrap
+        text-overflow ellipsis
+    else 
+        overflow hidden
+        display -webkit-box
+        -webkit-box-orient vertical
+        -webkit-line-clamp $lines
+
+// screen breakpoints
+
+desktop-lg()
+    @media (min-width:  1920px)
+        { block }
+
+desktop-md()
+    @media (min-width:  1280px)
+        { block }
+
+desktop-sm()
+    @media (max-width: 1280px)
+        { block }
+
+tablet-lg()
+    @media (max-width: 1024px)
+        { block }
+
+tablet()
+    @media (max-width: 768px)
+        { block }
+
+mobile()
+    @media (max-width: 430px)
+        { block }
+
+// FONTS
+// IBM Plex Sans
+
+@font-face
+    font-family 'IBM Plex Sans'
+    font-style normal
+    font-weight 300
+    src url(@/assets/fonts/ibm-plex-sans-light.ttf) format('truetype')
+
+@font-face
+    font-family 'IBM Plex Sans'
+    font-style normal
+    font-weight 400
+    src url(@/assets/fonts/ibm-plex-sans-regular.ttf) format('truetype')
+
+@font-face
+    font-family 'IBM Plex Sans'
+    font-style normal
+    font-weight 500
+    src url(@/assets/fonts/ibm-plex-sans-medium.ttf) format('truetype')
+
+// IBM Plex Mono
+
+@font-face
+    font-family 'IBM Plex Mono'
+    font-style normal
+    font-weight 300
+    src url(@/assets/fonts/ibm-plex-mono-light.ttf) format('truetype')
+
+@font-face
+    font-family 'IBM Plex Mono'
+    font-style normal
+    font-weight 400
+    src url(@/assets/fonts/ibm-plex-mono-regular.ttf) format('truetype')
+
+@font-face
+    font-family 'IBM Plex Mono'
+    font-style normal
+    font-weight 500
+    src url(@/assets/fonts/ibm-plex-mono-medium.ttf) format('truetype')
+
+// Ndtr Icons
+
+@font-face
+    font-family 'Ndtr Icons'
+    src url(@/assets/fonts/ndtr-icons.woff) format('woff')
+
+.icon,
+.pseudo-icon:before,
+.pseudo-icon:after
+    font-family 'Ndtr Icons'
+    font-weight normal
+    font-style normal
+    word-wrap normal
+    letter-spacing normal
+    text-transform none
+    white-space nowrap
+    font-size inherit
+    color inherit
+    line-height 1
+
+// VARIABLES
+// font variables
+
+$sans = 'IBM Plex Sans'
+$mono = 'IBM Plex Mono'
+$icon = 'Ndtr Icons'
+
+$light = 300
+$regular = 400
+$medium = 500

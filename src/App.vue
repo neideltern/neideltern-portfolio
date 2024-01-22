@@ -10,6 +10,4 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style lang="stylus">
-body
-    background: $background 
 </style>

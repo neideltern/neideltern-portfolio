@@ -1,0 +1,8 @@
+// eslint-disable-next-line no-undef
+module.exports = {
+    name: 'ndtr-icons',
+    inputDir: './src/assets/icons/',
+    outputDir: './src/assets/fonts/',
+    fontTypes: ['woff'],
+    assetTypes: [],
+}
