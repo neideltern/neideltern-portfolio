@@ -49,4 +49,7 @@ const link = computed(() => {
     &:hover
         color: $text-color-secondary
         border-color: $text-color-secondary
+    
+    +tablet-lg()
+        font-size: $font-size-sm
 </style>
