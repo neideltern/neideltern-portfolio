@@ -134,7 +134,7 @@ import { RouterLink } from 'vue-router'
     +tablet()
         padding: 0
 
-// // links
+// links
 
 .links
     grid-area: links
