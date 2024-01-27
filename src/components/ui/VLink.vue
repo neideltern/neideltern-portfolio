@@ -11,6 +11,9 @@ const props = defineProps({
     trim: {
         type: Boolean,
         default: false
+    },
+    icon: {
+        type: String,
     }
 })
 
@@ -22,26 +25,27 @@ const link = computed(() => {
 
 <template>
     <a class="link" :href="href">
-        {{ props.text ? props.text : link }}<span class="icon">arrow_outward</span>
+        <span class="icon" v-if="icon">{{ icon }}</span>
+        <div class="inner">
+            <span class="text">{{ props.text ? props.text : link }}</span>
+            <span class="icon">arrow_outward</span>
+        </div>
     </a>
 </template>
 
 <style lang="stylus" scoped>
 .link
-    display: grid
-    align-items: center 
-    grid-auto-flow: column
-    grid-auto-columns: max-content
-    gap: $gap-sm
+    display: flex
+    align-items: center
+    cursor: pointer
     width: max-content
-    padding: 2px 0
+    gap: $gap-sm
     line-height: 1
     font-family: $mono
     font-weight: $light
     font-size: $font-size-md
     color: $text-color-tertiary
-    border-bottom: $text-color-tertiary 1px solid
-    cursor pointer
+    border-color: $text-color-tertiary
     transition: 
         color .2s ease-in-out, 
         border .2s ease-in-out
@@ -49,7 +53,15 @@ const link = computed(() => {
     &:hover
         color: $text-color-secondary
         border-color: $text-color-secondary
-    
+
     +tablet-lg()
         font-size: $font-size-sm
+
+.inner
+    display: flex
+    align-items: center
+    gap: inherit
+    padding: 2px 0
+    border-bottom:  1px solid
+    border-color: inherit
 </style>
