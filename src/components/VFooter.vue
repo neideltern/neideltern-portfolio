@@ -14,7 +14,7 @@ import VLink from '@/components/ui/VLink.vue'
                 <RouterLink to="/about">
                     <VLink text="About" icon="dot" />
                 </RouterLink>
-                <RouterLink to="/contacts">
+                <RouterLink to="/contact">
                     <VLink text="Contact" icon="dot" />
                 </RouterLink>
             </div>
