@@ -43,6 +43,8 @@ import VLink from '@/components/ui/VLink.vue'
     display: grid
     border: $element-foreground 1px solid
     border-bottom: none
+    margin: 0 var(--page-margin)
+    background: $body-background
 
 .sections
     display: grid

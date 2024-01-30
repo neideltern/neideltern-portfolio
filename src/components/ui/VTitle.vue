@@ -7,13 +7,7 @@
     line-height: 1
     width: fit-content
     white-space: nowrap
-    font-weight: $medium
-    font-size: $font-size-xl
+    font-weight: $regular
+    font-size: var(--title-font-size)
     color: $text-color-primary
-
-    +tablet-lg()
-        font-size: $font-size-hg
-
-    +mobile()
-        font-size: $font-size-lg
 </style>
