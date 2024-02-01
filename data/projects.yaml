@@ -1,0 +1,49 @@
+- id: 3
+  path: agis-all-game-items-store
+  thumbnail: https://staticdelivery.nexusmods.com/mods/3333/images/10909/10909-1702220442-1160218078.jpeg
+  title: A.G.I.S. - All Game Items Store
+  description: >
+      A collection of Virtual Atelier stores containing (almost) all in-game items,
+      organized into product groups, and presented as immersive websites of brands and
+      corpos within Cyberpunk 2077 universe.
+  links:
+      - https://nexusmods.com/cyberpunk2077/mods/10909
+      - https://github.com/neideltern/agis-all-game-items-store
+  tags:
+      - Game Modding
+      - Open Source
+      - UX/UI
+  date: 11 November, 2023
+
+- id: 2
+  path: 4roll-dnd-game-companion-app
+  thumbnail: https://mir-s3-cdn-cf.behance.net/project_modules/1400/e53972163427883.641f4f05d9660.gif
+  title: 4ROLL — D&D Digital Game Companion
+  description: >
+      4ROLL - is a multiplatform game companion application designed for
+      the «Dungeons & Dragons 5e» and «One D&D» TTRPG game systems.
+      The application contains a complete set of game mechanics and rules
+      available in the digital space.
+  links:
+      - https://behance.net/gallery/163427883/4ROLL-D-D-Digital-Game-Companion-App
+      - https://dribbble.com/shots/21273302-4ROLL-Logo-Design
+  tags:
+      - UX/UI
+      - Mobile APP
+      - Web PWA
+  date: 7 April, 2023
+
+- id: 1
+  path: ui-design-for-englishnerd
+  thumbnail: https://mir-s3-cdn-cf.behance.net/project_modules/1400/8aae03120017651.60a95a30577df.png
+  title: UI design for englishnerd
+  description: >
+      Aenean eu turpis vel nulla iaculis pretium. Integer faucibus lorem vitae mattis sodales. 
+      Duis non convallis purus. Mauris non mauris eget odio viverra euismod id vel leo. 
+      Aliquam erat volutpat. Aliquam eget elementum purus, dignissim vestibulum arcu.
+  links:
+      - https://behance.net/gallery/120017651/UI-design-for-englishnerdorg
+  tags:
+      - UX/UI
+      - Web Design
+  date: 22 May, 2022

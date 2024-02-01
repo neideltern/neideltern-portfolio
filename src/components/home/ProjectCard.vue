@@ -58,53 +58,27 @@ defineProps({
     grid-template-columns: 1fr 2fr
     gap: $gap-lg
 
-    +desktop-sm()
-        gap: $gap-md
-
-    +tablet()
-        grid-template-areas: 'thumbnail' 'body'
-        grid-template-columns: 1fr
-
 .body
     grid-area: body
     display: grid
     grid-template-rows: 1fr max-content
     gap: $gap-lg
 
-    +desktop-sm()
-        gap: $gap-md
-    
-    +desktop-sm()
-        gap: $gap-lg
-
 .header, .footer
     display flex
     flex-direction: column
     gap: inherit
-
-    +desktop-sm()
-        gap: $gap-md
 
 .links
     display: flex
     flex-direction: column
     gap: $gap-md
 
-    +desktop-sm()
-        flex-direction: row
-        flex-wrap: wrap
-
-    +desktop-sm()
-        flex-direction: column
-
 .tags
     display: flex
     flex-direction: row
     flex-wrap: wrap
     gap: $gap-md
-
-    +desktop-sm()
-        gap: $gap-sm
 
 // text
 
@@ -115,17 +89,12 @@ defineProps({
     line-height: 1.2
     text-transform: uppercase
 
-    +desktop-sm()
-        font-size: $font-size-xl
-
 .description
     color: $text-color-secondary
     font-size: $font-size-lg
     font-weight: $light
     line-height: 1.4
     text-overflow(4)
-    +desktop-sm()
-        font-size: $font-size-md
 
 .date
     line-height: 1
@@ -134,8 +103,6 @@ defineProps({
     font-size: $font-size-md
     color: $text-color-tertiary
     border-color: $text-color-tertiary
-    +tablet-lg()
-        font-size: $font-size-sm
 
 // thumbnail
 
@@ -201,9 +168,4 @@ defineProps({
     &:after
         content: 'open_in_new'
         @extend .icon
-
-    +tablet()
-        padding: 0 18px
-        height: $control-height-md
-        font-size: $font-size-sm
 </style>
